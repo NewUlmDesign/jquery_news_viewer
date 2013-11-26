@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FeedViewer</title>
+<meta name="author" content="Francesco De Stefano">
+<meta name="generator" content="Francesco De Stefano">
+<link rel="stylesheet" href="./jquery.newsviewer.css" type="text/css">
+</head>
+<body>
+<div id="container">
+<div id="newsviewer">
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="./jquery.newsviewer.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#newsviewer").newsviewer({ mode: 'scroller', access_token: null, pause: 3000, param: null, dataSource: 'rss', speed: 30, url: 'rss.php', target: '_blank',  maxItems: 10});
+});
+</script>
+</body>
+</html>
